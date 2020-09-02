@@ -1,0 +1,25 @@
+{{#if memo}}
+import React, { memo } from 'react';
+{{else}}
+import React from 'react';
+{{/if}}
+// import PropTypes from 'prop-types';
+// import styled from 'styled-components';
+import {{ properCase name }}Context from './{{ camelCase name }}Context';
+import {{ properCase name }} from './{{ camelCase name }}';
+
+function {{ properCase name }}() {
+return (
+<{{ properCase name }}Context.Provider>
+  <{{ properCase name }} />
+</{{ properCase name }}Context.Provider>
+);
+}
+
+{{ properCase name }}.propTypes = {};
+
+{{#if memo}}
+export default memo({{ properCase name }});
+{{else}}
+export default {{ properCase name }};
+{{/if}}

@@ -1,0 +1,20 @@
+{
+  "name": "generator-app",
+  "version": "1.0.0",
+  "description": "generator files for projects",
+  "main": "index.js",
+  "author": "juanfer",
+  "license": "MIT",
+  "scripts": {
+    "generate": "npx plop --plopfile generators/index.js",
+    "prettify": "prettier --write"
+  },
+  "dependencies": {
+    "node-plop": "^0.26.2",
+    "plop": "^2.7.4",
+    "prettier": "^2.1.1"
+  },
+  "devDependencies": {
+    "prettier": "^2.1.1"
+  }
+}
